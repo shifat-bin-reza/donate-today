@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 .btn-primary {
@@ -19,16 +20,23 @@
 
 /* header styles */
 header {
-  width: 100%;
   background-image: url("header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-header .header-items {
-  width: 50%;
+.header-items {
+  width: 80%;
   margin: auto;
-  padding: 150px;
+  padding: 80px;
+}
+
+header h1 {
+  font-size: 4.5vw;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
 .header-items h1,
@@ -37,10 +45,6 @@ p {
   color: white;
   text-align: center;
   margin: auto;
-}
-
-.header-items h1 {
-  font-size: 55px;
 }
 
 .header-items p {
@@ -88,8 +92,8 @@ p {
   color: #707070;
   background-color: #f4f4f4;
   list-style: none;
-  width: 10%;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   margin-right: 10px;
   padding: 15px;
   display: flex;
@@ -138,7 +142,8 @@ hr {
 
 .plan-item-box {
   padding: 20px;
-  width: 25%;
+  width: 30%;
+  height: 30%;
   margin: 20px 0;
   border-radius: 5px;
 }
@@ -275,6 +280,7 @@ hr {
   text-align: center;
   font-size: 14px;
   margin: 10px 0;
+  line-height: 1.4rem;
 }
 
 .email-subscribe {
@@ -338,4 +344,163 @@ address {
 .footer-contact-info address {
   font-size: 14px;
   color: #707070;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 1038px) {
+  .plan-item {
+    flex-direction: column;
+  }
+
+  .plan-item-box {
+    padding: 20px;
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 623px) {
+  .plan-item-box {
+    padding: 20px;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .plan-item-box {
+    padding: 20px;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 738px) {
+  .main-donate-today {
+    width: 80%;
+    margin: auto;
+  }
+
+  .main-donate-plan {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .main-donate-today ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-donate-today ul li {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .main-donate-plan-description {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1074px) {
+  .main-lives-group {
+    flex-direction: column;
+  }
+
+  .main-lives-left {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .main-lives-right {
+    margin: 20px auto;
+    width: 100%;
+  }
+
+  .main-lives-left p {
+    width: 100%;
+  }
+
+  .main-need-group {
+    flex-direction: column;
+  }
+
+  .main-need-left {
+    width: 100%;
+  }
+
+  .main-need-right {
+    width: 100%;
+    margin-top: 20px auto;
+  }
+
+  .main-need-right p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1174px) {
+  .main-updates-group {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+
+  .main-updates {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .main-updates-group {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .input-email {
+    margin: 0;
+    width: 60%;
+    border-radius: 2px;
+    margin-left: 10%;
+  }
+
+  
+}
+
+@media only screen and (max-width: 810px) {
+  
+  .main-updates-group {
+    width: 100%;
+  }
+
+  .btn-subscribe {
+    margin-top: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    width: 100px;
+  }
+
+  .input-email {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .main-updates {
+    width: 100%;
+  }
+
+  .main-updates-group {
+    width: 80%;
+  }
+
 }
