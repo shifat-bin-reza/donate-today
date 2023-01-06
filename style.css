@@ -10,7 +10,7 @@
   background-color: #ff5959;
   border: none;
   padding: 8px 12px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .btn-primary:hover {
@@ -254,4 +254,66 @@ hr {
   margin: 20px 0;
 }
 
+/* get my updates */
+.main-updates {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.main-updates-group{
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+}
+
+.main-updates-group h1 {
+  text-align: center;
+}
+
+.main-updates-group p {
+  color: #707070;
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.email-subscribe {
+  padding: 50px;
+  background-color: #FFF4D6;
+  border-radius: 2px;
+  margin: auto;
+}
+
+.input-email {
+  padding: 10px;
+  float: left;
+}
+
+.input-email:focus {
+  outline-color: #f83333;
+}
+
+.btn-subscribe {
+  padding: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  float: left;
+  border-left: none;
+  cursor: pointer;
+  width: 20%;
+}
+
+.input-email {
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 2px 0px 0px 2px;
+  width: 40%;
+  margin-left: 18%;
+}
+
+form.email-subscribe::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
