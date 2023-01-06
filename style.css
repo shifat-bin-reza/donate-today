@@ -497,10 +497,11 @@ address {
 
   .main-updates {
     width: 100%;
+    margin: 50px 0;
   }
 
   .main-updates-group {
-    width: 80%;
+    width: 100%;
   }
 
 }
